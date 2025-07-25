@@ -1,75 +1,50 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Quicksand', sans-serif;
-}
-
-.navbar {
+.navbar .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 18px 30px;
-  background-color: #fff4f8;
-  border-bottom: 1px solid #ffe0ec;
+  align-items:end;
+  padding: 20px;
 }
 
-/* 🌸 Logo */
 .logo {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: bold;
   color: #672463;
+}
+
+.nav-right {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 30px;
 }
 
-/* 🌸 Navigation Links */
 .nav-links {
   display: flex;
+  gap: 20px;
   list-style: none;
-  gap: 25px;
+  padding: 0;
+  margin: 0;
 }
 
-.nav-links a {
+.nav-links li a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  transition: color 0.3s;
 }
 
-.nav-links a:hover {
-  color: #e91e63;
+.cart i {
+  font-size: 20px;
+  color: #333;
 }
-
-.cart-icon {
-  margin-right: 6px;
-}
-
-/* 🌸 Mobile Cart Display */
-.mobile-cart {
-  display: none;
-  font-weight: 600;
-  color: #d81ee9;
-}
-
-/* 🌸 Media Query for Mobile */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
   }
-
-  .mobile-cart {
-    display: block;
-  }
 }
 
 
 
-/* 🌸 Banner Section */
+
+/* Banner*/
 .banner {
   background-color: #fffafc;
   padding: 60px 20px;
@@ -108,7 +83,7 @@ body {
 }
 
 .banner-text p {
-  font-size: 1.1rem;
+  font-size: 1.5em;
   color: #555;
   max-width: 500px;
   line-height: 1.6;
@@ -123,10 +98,10 @@ body {
   width: 100%;
   max-width: 500px;
   border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(233, 30, 99, 0.15);
+  box-shadow: 0 50px 50px rgba(233, 30, 99, 0.15);
 }
 
-/* 🌸 Responsive Banner */
+/* Responsive */
 @media (max-width: 768px) {
   .banner-container {
     flex-direction: column;
@@ -149,7 +124,7 @@ body {
   }
 }
 
-/* 🌼 Flower Section Container */
+/* Flower Section Container */
 .flower-section {
   background-color: #fff;
   padding: 60px 20px;
@@ -162,7 +137,7 @@ body {
   width: 100%;
 }
 
-/* 🌼 Section Title */
+/* Section Title */
 .section-header {
   text-align: center;
   margin-bottom: 40px;
@@ -175,7 +150,7 @@ body {
 }
 
 .section-header p {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   color: #666;
 }
 
@@ -187,18 +162,15 @@ body {
 .green-text {
   color: #4caf50;
 }
-.orange-text {
-  color: #ff9800;
-}
 
-/* 🌸 Flower Grid */
+/* Flower grid */
 .flower-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 
-/* 🌸 Flower Card */
+/*Flower Card */
 .card {
   background: #fff4f8;
   border-radius: 10px;
@@ -230,10 +202,10 @@ body {
   margin-bottom: 10px;
 }
 
-/* 🌸 Button */
+/* Button */
 .card button {
   padding: 10px 16px;
-  background-color: #e91e63;
+  background-color: #8a7a98;
   color: white;
   border: none;
   border-radius: 6px;
@@ -245,7 +217,7 @@ body {
   background-color: #c2185b;
 }
 
-/* 🌿 Responsive Grid */
+/* Responsive grid */
 @media (max-width: 768px) {
   .flower-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -256,9 +228,9 @@ body {
   }
 }
 
-/* 🌿 Plants Lover Section */
+/* Plants Lover Section */
 .plants-lover-section {
-  background-color: #effcff; /* Very light greenish */
+  background-color: #effcff; 
   padding: 60px 20px;
   display: flex;
   justify-content: center;
@@ -273,7 +245,7 @@ body {
   align-items: center;
 }
 
-/* 🌿 Image with badge */
+/*  Image with badge */
 .image-container {
   position: relative;
 }
@@ -294,7 +266,7 @@ body {
   box-shadow: 0 8px 8px rgba(0,0,0,0.1);
 }
 
-/* 🌿 Text Content */
+
 .text-content h2 {
   font-size: 2rem;
   margin-bottom: 20px;
@@ -312,7 +284,7 @@ body {
   font-size: 2 em;
 }
 
-/* 🌿 Mobile Responsive */
+/*  Responsive */
 @media (max-width: 768px) {
   .plants-lover-section .container {
     grid-template-columns: 1fr;
@@ -343,13 +315,13 @@ body {
 
 
 
-/* 🌸 Latest Deal Section */
+/*  Latest deal section */
 .latest-deal-section {
   padding: 60px 20px;
   background-color: #fff;
 }
 
-/* 🌸 Title and Subtitle */
+
 .deal-header {
   max-width: 1440px;
   margin: 0 auto 40px;
@@ -368,7 +340,7 @@ body {
   margin-top: 10px;
 }
 
-/* 🌸 Grid Container */
+/* Grid container */
 .deal-grid {
   display: grid;
   max-width: 1440px;
@@ -377,7 +349,7 @@ body {
   gap: 20px;
 }
 
-/* 🌸 Deal Cards */
+/*  Deal cards */
 .deal-card {
   position: relative;
   overflow: hidden;
@@ -424,7 +396,7 @@ body {
   gap: 20px;
 }
 
-/* 🌸 Responsive for Mobile */
+/*Responsive mobile */
 @media (max-width: 768px) {
   .deal-grid {
     grid-template-columns: 1fr;
@@ -445,7 +417,7 @@ body {
 }
 
 
-/* 🌸 Join Section */
+/* Join Section */
 .join-section {
   background-image: url('flowerlandscape.jpeg');
   background-size: cover;
@@ -507,7 +479,7 @@ body {
   background-color:  #b5eab8;
 }
 
-/* 📱 Mobile Responsive */
+/*Mobile responsive */
 @media (max-width: 600px) {
   .join-content h2 {
     font-size: 2rem;
