@@ -258,7 +258,7 @@ body {
 
 /* 🌿 Plants Lover Section */
 .plants-lover-section {
-  background-color: #f9fdf8; /* Very light greenish */
+  background-color: #effcff; /* Very light greenish */
   padding: 60px 20px;
   display: flex;
   justify-content: center;
@@ -284,14 +284,14 @@ body {
 }
 
 .badge {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
+  position:absolute;
+  top: -5px;
+  right: -20px;
+  width: 100px;
+  height: 100px;
+
   border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 8px rgba(0,0,0,0.1);
 }
 
 /* 🌿 Text Content */
@@ -302,14 +302,14 @@ body {
 }
 
 .text-content ul {
-  list-style-type: disc;
+  list-style-type:square;
   padding-left: 20px;
   color: #444;
 }
 
 .text-content ul li {
   margin-bottom: 12px;
-  font-size: 1.05rem;
+  font-size: 2 em;
 }
 
 /* 🌿 Mobile Responsive */
@@ -361,10 +361,6 @@ body {
   font-weight: bold;
 }
 
-.highlight1 { color: #e91e63; }
-.highlight2 { color: #4caf50; }
-.highlight3 { color: #3f51b5; }
-.highlight4 { color: #ff9800; }
 
 .deal-header p {
   font-size: 1.1rem;
@@ -410,7 +406,7 @@ body {
 
 .deal-card .overlay button {
   padding: 8px 16px;
-  background-color: #4caf50;
+  background-color: #8a7a98;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -419,7 +415,7 @@ body {
 }
 
 .deal-card .overlay button:hover {
-  background-color: #388e3c;
+  background-color: #b5eab8;
 }
 
 .small-deals {
@@ -451,7 +447,7 @@ body {
 
 /* 🌸 Join Section */
 .join-section {
-  background-image: url('flowerlandscape.jpeg'); /* Replace with your Figma image */
+  background-image: url('flowerlandscape.jpeg');
   background-size: cover;
   background-position: center;
   padding: 80px 20px;
@@ -470,7 +466,7 @@ body {
 }
 
 .highlight {
-  color: #ffb300; /* Yellow-ish accent like Figma */
+  color: #05082b7d; 
 }
 
 .join-content p {
@@ -498,17 +494,17 @@ body {
 .join-form button {
   padding: 12px 24px;
   font-size: 1rem;
-  background-color: #4caf50;
+  background-color: #8a7a98;
   color: #fff;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
-  transition: background 0.3s ease;
+ 
 }
 
 .join-form button:hover {
-  background-color: #388e3c;
+  background-color:  #b5eab8;
 }
 
 /* 📱 Mobile Responsive */
@@ -522,7 +518,7 @@ body {
   }
 
   .join-form {
-    flex-direction: column;
+    flex-direction:column;
   }
 
   .join-form input,
@@ -533,7 +529,7 @@ body {
 }
 
 .footer {
-  background-color: #f9f9f9;
+  background-color: #def1fd;
   padding: 40px 20px;
   font-family: 'Arial', sans-serif;
 }
@@ -543,8 +539,9 @@ body {
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1.5fr 1fr;
-  gap: 40px;
-  align-items: flex-start;
+   gap: 40px;
+ 
+  align-items:flex-start;
 }
 
 .footer-logo {
@@ -585,7 +582,7 @@ body {
 }
 
 .footer-links ul li a:hover {
-  color: #2e8b57;
+  color: #dd0909;
 }
 
 .footer-socials h4 {
@@ -606,7 +603,7 @@ body {
 }
 
 .social-icons i:hover {
-  color: #2e8b57;
+  color: #dd0909;
 }
 
 /* Responsive */
