@@ -1,0 +1,635 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 30px;
+  background-color: #fff4f8;
+  border-bottom: 1px solid #ffe0ec;
+}
+
+/* 🌸 Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #672463;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 🌸 Navigation Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e91e63;
+}
+
+.cart-icon {
+  margin-right: 6px;
+}
+
+/* 🌸 Mobile Cart Display */
+.mobile-cart {
+  display: none;
+  font-weight: 600;
+  color: #d81ee9;
+}
+
+/* 🌸 Media Query for Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-cart {
+    display: block;
+  }
+}
+
+
+
+/* 🌸 Banner Section */
+.banner {
+  background-color: #fffafc;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-container {
+  max-width: 1140px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.banner-text {
+  flex: 1 1 500px;
+}
+
+.banner-text h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #222;
+}
+
+.highlight-pink {
+  color: #e91e63;
+}
+
+.highlight-green {
+  color: #4caf50;
+}
+
+.banner-text p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.banner-image {
+  flex: 1 1 500px;
+  text-align: center;
+}
+
+.banner-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(233, 30, 99, 0.15);
+}
+
+/* 🌸 Responsive Banner */
+@media (max-width: 768px) {
+  .banner-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .banner-text h1 {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .banner-text p {
+    text-align: left;
+  }
+
+  .banner-image {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* 🌼 Flower Section Container */
+.flower-section {
+  background-color: #fff;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+}
+
+/* 🌼 Section Title */
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Colored Words */
+.pink-text {
+  color: #c66b8a;
+  font:bold;
+}
+.green-text {
+  color: #4caf50;
+}
+.orange-text {
+  color: #ff9800;
+}
+
+/* 🌸 Flower Grid */
+.flower-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* 🌸 Flower Card */
+.card {
+  background: #fff4f8;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* 🌸 Button */
+.card button {
+  padding: 10px 16px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #c2185b;
+}
+
+/* 🌿 Responsive Grid */
+@media (max-width: 768px) {
+  .flower-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+}
+
+/* 🌿 Plants Lover Section */
+.plants-lover-section {
+  background-color: #f9fdf8; /* Very light greenish */
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.plants-lover-section .container {
+  max-width: 1140px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* 🌿 Image with badge */
+.image-container {
+  position: relative;
+}
+
+.main-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 🌿 Text Content */
+.text-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+.text-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #444;
+}
+
+.text-content ul li {
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+}
+
+/* 🌿 Mobile Responsive */
+@media (max-width: 768px) {
+  .plants-lover-section .container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .text-content h2 {
+    font-size: 1.7rem;
+    text-align: left;
+  }
+
+  .text-content {
+    text-align: left;
+  }
+
+  .image-container,
+  .main-image {
+    width: 100%;
+  }
+
+  .badge {
+    width: 60px;
+    height: 60px;
+    top: 8px;
+    right: 8px;
+  }
+}
+
+
+
+/* 🌸 Latest Deal Section */
+.latest-deal-section {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+/* 🌸 Title and Subtitle */
+.deal-header {
+  max-width: 1440px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.deal-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.highlight1 { color: #e91e63; }
+.highlight2 { color: #4caf50; }
+.highlight3 { color: #3f51b5; }
+.highlight4 { color: #ff9800; }
+
+.deal-header p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* 🌸 Grid Container */
+.deal-grid {
+  display: grid;
+  max-width: 1440px;
+  margin: 0 auto;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+/* 🌸 Deal Cards */
+.deal-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.deal-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.deal-card .overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+}
+
+.deal-card .overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.deal-card .overlay button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.deal-card .overlay button:hover {
+  background-color: #388e3c;
+}
+
+.small-deals {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+/* 🌸 Responsive for Mobile */
+@media (max-width: 768px) {
+  .deal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .small-deals {
+    grid-template-rows: none;
+    gap: 20px;
+  }
+
+  .deal-card {
+    height: 184.5px;
+  }
+
+  .deal-header h2 {
+    font-size: 1.8rem;
+  }
+}
+
+
+/* 🌸 Join Section */
+.join-section {
+  background-image: url('flowerlandscape.jpeg'); /* Replace with your Figma image */
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.join-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.join-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #ffb300; /* Yellow-ish accent like Figma */
+}
+
+.join-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.join-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.join-form input {
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  flex: 1 1 300px;
+  max-width: 350px;
+}
+
+.join-form button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.join-form button:hover {
+  background-color: #388e3c;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 600px) {
+  .join-content h2 {
+    font-size: 2rem;
+  }
+
+  .join-content p {
+    font-size: 1rem;
+  }
+
+  .join-form {
+    flex-direction: column;
+  }
+
+  .join-form input,
+  .join-form button {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.footer {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color:  #672463;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo i {
+  font-size: 28px;
+}
+
+.footer-description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  columns: 2;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #444;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #2e8b57;
+}
+
+.footer-socials h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons i {
+  font-size: 20px;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+  color: #2e8b57;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+
+  .footer-links ul {
+    columns: 1;
+  }
+
+  .footer-socials {
+    margin-top: 20px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+

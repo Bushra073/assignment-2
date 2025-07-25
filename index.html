@@ -2,32 +2,261 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Plant Website</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="font-sans text-gray-800">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BlossomBay</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+ 
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
 
-     <!-- 🌿 1. Navbar -->
-  <nav class="flex justify-between items-center px-6 py-4 shadow-md sticky top-0 bg-white z-10">
-    <div class="text-2xl font-bold text-green-700">PlantParadise</div>
-    <div class="hidden md:flex gap-8 text-sm font-medium">
-      <a href="#" class="hover:text-green-600 transition">Home</a>
-      <a href="#" class="hover:text-green-600 transition">Features</a>
-      <a href="#" class="hover:text-green-600 transition">🛒 Cart</a>
+</head>
+<body>
+  <!-- 🌸 Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      🌸 <span>BlossomBay</span>
     </div>
-    <div class="flex md:hidden items-center text-lg font-semibold">
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#"><span class="cart-icon">🛒</span> Cart</a></li>
+    </ul>
+    <!-- Mobile Cart -->
+    <div class="mobile-cart">
       🛒 Cart
     </div>
   </nav>
+  <!-- 🌸 Banner Section -->
+<section class="banner">
+  <div class="banner-container">
+    <!-- Left: Text Content -->
+    <div class="banner-text">
+      <h1>
+        Welcome to <span class="highlight-pink">Blossom</span>
+        <span class="highlight-green">Bay</span> – Your Floral Escape
+      </h1>
+      <p>
+        Discover a world of vibrant blooms, handpicked just for you. Whether it's roses or ranunculus, we’ve got the perfect pick for every petal lover.
+      </p>
+    </div>
 
-  <!-- 🖼️ 2. Banner -->
-  <section class="flex flex-col md:flex-row items-center px-6 py-12 gap-10 md:gap-20">
-    <div class="md:w-1/2">
-      <h1 class="text-4xl font-extrabold text-green-700 mb-4">Welcome to Your Plant Paradise</h1>
-      <p class="text-gray-600 text-lg">Discover, buy, and care for your favorite indoor plants—all in one place.</p>
+    <!-- Right: Image -->
+    <div class="banner-image">
+      <img src="rosesfence.jpeg" alt="Flowers" />
     </div>
-    <div class="md:w-1/2">
-      <img src="https://via.placeholder.com/500x350" class="rounded-xl w-full shadow-md" alt="Banner Image" />
+  </div>
+</section>
+
+
+
+<!-- 🌼 Flower Grid Section -->
+<section class="flower-section">
+  <div class="container">
+    <!-- Section Heading -->
+    <div class="section-header">
+      <h2>
+        Our <span class="pink-text">Fresh</span>
+        <span class="green-text">Flower</span>
+        <span class="orange-text">Collection</span>
+      </h2>
+      <p>Handpicked blooms for every occasion</p>
     </div>
-  </section>
+
+    <!-- Flower Grid -->
+    <div class="flower-grid">
+    
+      <div class="card">
+        <img src="tulippaperbouq.jpeg" alt="Flower 1" />
+        <h3>Vintage Tulips</h3>
+        <p>$18.00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="s u n f l o w e r.jpeg" alt="Flower 1" />
+        <h3>Smiley Sunflower</h3>
+        <p>$12.00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="tulipsoutlined.jpeg" alt="Flower 1" />
+        <h3>Fresh Tulips</h3>
+        <p>$15.00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="s u n f l o w e r.jpeg" alt="Flower 1" />
+        <h3>Smiley Sunflower</h3>
+        <p>$12.00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="tulippaperbouq.jpeg" alt="Flower 1" />
+        <h3>Vintage Tulips</h3>
+        <p>$18.00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="s u n f l o w e r.jpeg" />
+        <h3>Smiley Sunflowers</h3>
+        <p>$12.00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="tulipsoutlined.jpeg" alt="Flower 1" />
+        <h3>Fresh Tulips</h3>
+        <p>$15.00</p>
+        <button>Add to Cart</button>
+      </div>
+      
+     
+      
+      <div class="card">
+        <img src="s u n f l o w e r.jpeg" alt="Flower 2" />
+        <h3>Smiley Sunflower</h3>
+        <p>$12.00</p>
+        <button>Add to Cart</button>
+      </div>
+
+      
+    </div>
+  </div>
+</section>
+
+
+<!-- 🌿 Plants Lover Section -->
+<section class="plants-lover-section">
+  <div class="container">
+    <!-- Left: Image with Badge -->
+    <div class="image-container">
+      <img src="flowershop.jpeg" alt="Plants Image" class="main-image">
+      <img src="" alt="Trusted Seller Badge" class="badge">
+    </div>
+
+    
+
+  
+
+
+    <!-- Right: Content -->
+    <div class="text-content">
+      <h2>Why Plant Lovers <span class="pink-text">TRUST</span> Us</h2>
+      <ul>
+        <li>Fresh and healthy plants, always</li>
+        <li>Trusted by over 10,000+ happy customers</li>
+        <li>Eco-friendly packaging</li>
+        <li>Fast & reliable delivery</li>
+        <li>Personalized care instructions with every order</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 🌸 Latest Deal Section -->
+<section class="latest-deal-section">
+
+  <!-- Title and Subtitle -->
+  <div class="deal-header">
+    <h2><span class="pink-text">Latest</span> <span class="highlight2">Deals</span> <span class="pink-text">For</span> <span class="pink-text">You</span></h2>
+    <p>Catch the freshest offers on your favorite blooms before they wither away!</p>
+  </div>
+
+  <!-- Grid Image Container -->
+  <div class="deal-grid">
+    
+    <!-- Left: Large Image -->
+    <div class="deal-card large">
+      <img src="dottedoutlinedtulips.jpeg" alt="Big Deal Image">
+      <div class="overlay">
+        <p>60% Off | Bloom Plant</p>
+        <button>Shop Now</button>
+      </div>
+    </div>
+
+    <!-- Right: Two stacked smaller images -->
+    <div class="small-deals">
+      <div class="deal-card small">
+        <img src="daisy.jpeg" alt="Small Deal 1">
+        <div class="overlay">
+          <p>40% Off | Daisies</p>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <div class="deal-card small">
+        <img src="pinkroses.jpeg" alt="Small Deal 2">
+        <div class="overlay">
+          <p>30% Off | Pink Roses</p>
+          <button>Shop Now</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- 🌸 Join Section -->
+<section class="join-section">
+  <div class="join-content">
+    <h2>Join the <span class="highlight">Colorful Bunch</span></h2>
+    <p>Subscribe to our newsletter for fresh blooms & latest offers!</p>
+
+    <form class="join-form">
+      <input type="email" placeholder="Enter your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Left: Logo & Description -->
+    <div class="footer-left">
+      <div class="footer-logo">
+        <i class="fas fa-spa"></i> 🌸BlossomBay
+      </div>
+      <p class="footer-description">
+        Bringing nature closer to you with fresh flowers and indoor plants.
+      </p>
+    </div>
+
+    <!-- Center: Navigation Links -->
+    <div class="footer-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Help Center</a></li>
+      </ul>
+    </div>
+
+    <!-- Right: Social Icons -->
+    <div class="footer-socials">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+</body>
+</html>
