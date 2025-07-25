@@ -1,25 +1,36 @@
+/* Overall Navbar Container */
+.navbar {
+  background-color: #f6edfa;
+  padding: 20px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
 .navbar .container {
   display: flex;
   justify-content: space-between;
-  align-items:end;
-  padding: 20px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
+/* Logo stays left */
 .logo {
   font-size: 24px;
   font-weight: bold;
-  color: #672463;
+  color: #8a7a98;
 }
 
+/* Right container (menu + cart) */
 .nav-right {
   display: flex;
   align-items: center;
+  margin-left: auto; /* pushes it far right */
   gap: 30px;
 }
 
+/* Menu items */
 .nav-links {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -31,15 +42,28 @@
   font-weight: 500;
 }
 
+/* Cart icon */
 .cart i {
   font-size: 20px;
   color: #333;
 }
+
+/* Mobile responsive */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
   }
+
+  .cart {
+    margin-left: auto;
+  }
+
+  .nav-right {
+    justify-content: flex-end;
+    width: 100%;
+  }
 }
+
 
 
 
@@ -519,7 +543,7 @@
 .footer-logo {
   font-size: 24px;
   font-weight: bold;
-  color:  #672463;
+  color: #8a7a98;
   display: flex;
   align-items: center;
   gap: 10px;
